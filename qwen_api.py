@@ -1,5 +1,5 @@
 import dashscope
-dashscope.api_key="sk-1b3dd44882044c2dbcec8d743d984f0e"
+dashscope.api_key=""
 from http import HTTPStatus
 
 from http import HTTPStatus
