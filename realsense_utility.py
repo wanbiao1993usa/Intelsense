@@ -116,7 +116,7 @@ class RealSense:
         intr, depth_intrin, color_image, depth_image, aligned_depth_frame, depth_image_3d = self.get_aligned_images()
         x_pixel, y_pixel = self._get_pixel_coordinates(x, y)
         distance = aligned_depth_frame.get_distance(x_pixel, y_pixel)
-        return distance
+        return 1000*distance
 
     def get_average_depth(self, top_left: Tuple[int, int], bottom_right: Tuple[int, int]) -> float:
         """
